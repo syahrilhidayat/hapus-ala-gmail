@@ -1,0 +1,99 @@
+body{
+    background:#f9f9f9; 
+    font-family: 'Roboto', sans-serif;
+}
+.container{ 
+    width: 600px; 
+    text-align: center; 
+    margin: 40px auto;
+}
+h3{
+    color: #1cb7b0; 
+    font-size: 3em; 
+    letter-spacing: 0.1em;
+    margin-top: 0px; 
+    margin-bottom: 10px; 
+}
+h4{
+    font-size: 1em; 
+    margin-top: 0px;
+    margin-bottom: 40px; 
+    text-transform: uppercase; 
+}
+#frame{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    background: white;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: left;
+}
+.tombol {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: right;
+    display: none;
+}
+.hapus {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #ececec;
+    color: red;
+    display: inline-block;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.list {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+h5.pengirim {
+    margin: 0px;
+}
+
+h6.judul {
+    margin: 5px 0px 7px 0px;
+    font-size: 12px;
+}
+
+p {margin: 0px;font-size: 12px;}
+
+.konten{
+    margin-left: 15px;
+}
+.idHapus{ display: none;  }
+.icon {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transform-style:preserve-3d;
+    transition:transform 1s;
+    perspective:100px;
+}
+.belakang {
+    background: #bd0e16;
+    color: white;
+    transform: rotateY(180deg);
+}
+.depan {
+    background: #eaeaea;
+    color: #d2d2d2;
+}
+.depan, .belakang{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    backface-visibility:hidden;
+}
+.icon.active{
+    transform: rotateY(180deg);
+}
